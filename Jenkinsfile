@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Compilando..."
-                sh 'echo Hola > build.txt'
+                sh 'echo "Hola - version2" > build.txt'
             }
         }
 
