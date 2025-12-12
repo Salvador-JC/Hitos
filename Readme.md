@@ -1,2 +1,1 @@
-Esto funciona
-detecta los cambios
+Prueba de trigger del hito-2
