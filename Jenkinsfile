@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Compilando..."
-                sh 'echo Hola > build.txt'
+                sh 'eccccccccho Hola > build.txt'
             }
         }
 
