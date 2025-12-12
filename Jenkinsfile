@@ -2,10 +2,25 @@ pipeline {
     agent any
 
     stages {
+
+        stage('Test') {
+            steps {
+                echo "Ejecutando tests..."
+
+                // Ejecutar todos los scripts dentro de tests/
+                sh '''
+                for test in tests/*.sh; do
+                    echo "Ejecutando $test..."
+                    bash "$test"
+                done
+                '''
+            }
+        }
+
         stage('Build') {
             steps {
                 echo "Compilando..."
-                sh 'eccccccccho Hola > build.txt'
+                sh 'echo Hola > build.txt'
             }
         }
 
